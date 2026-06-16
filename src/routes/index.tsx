@@ -787,7 +787,19 @@ function Footer() {
       <div className="border-t border-white/10">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-5 py-6 text-xs text-white/55 md:flex-row md:px-8">
           <span>© {new Date().getFullYear()} Adron Salon Pvt Ltd. All rights reserved.</span>
-          <span>Crafted with care in Ahmedabad.</span>
+          <span className="flex flex-wrap items-center justify-center gap-x-1.5">
+            <span>
+              Created by{" "}
+              <a
+                href="https://hardikkanajariya.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/80 hover:text-gold transition-colors font-medium"
+              >
+                hardikkanajariya.in
+              </a>
+            </span>
+          </span>
         </div>
       </div>
     </footer>
