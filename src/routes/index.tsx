@@ -6,7 +6,7 @@ import {
   Star,
   Scissors,
   Sparkles,
-  Paintbrush,
+  
   Hand,
   Crown,
   Award,
