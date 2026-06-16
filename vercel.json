@@ -1,4 +1,9 @@
 {
-  "framework": null,
-  "buildCommand": "pnpm run build"
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }

@@ -43,51 +43,6 @@ const MAPS_EMBED = `https://www.google.com/maps?q=${encodeURIComponent(
 )}&output=embed`;
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Adron Salon Pvt Ltd — Premium Unisex Salon in South Bopal, Ahmedabad" },
-      {
-        name: "description",
-        content:
-          "Adron Salon in South Bopal, Ahmedabad — premium hair, beauty, nail and bridal makeup services. 4.6★ with 1088+ reviews. Book your appointment today.",
-      },
-      { property: "og:title", content: "Adron Salon Pvt Ltd — Luxury Beauty & Makeup Studio" },
-      {
-        property: "og:description",
-        content:
-          "Premium unisex salon in South Bopal, Ahmedabad. Hair, beauty, nails and bridal makeup by expert stylists.",
-      },
-      { property: "og:type", content: "website" },
-      { property: "og:url", content: "/" },
-    ],
-    links: [{ rel: "canonical", href: "/" }],
-    scripts: [
-      {
-        type: "application/ld+json",
-        children: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "BeautySalon",
-          name: "Adron Salon Pvt Ltd",
-          image: "/og.jpg",
-          telephone: PHONE,
-          priceRange: "₹₹",
-          address: {
-            "@type": "PostalAddress",
-            streetAddress: "Shop No 5, Orchid Center, Opp. Safal Parisar 1, South Bopal",
-            addressLocality: "Ahmedabad",
-            addressRegion: "Gujarat",
-            postalCode: "380058",
-            addressCountry: "IN",
-          },
-          aggregateRating: {
-            "@type": "AggregateRating",
-            ratingValue: "4.6",
-            reviewCount: "1088",
-          },
-        }),
-      },
-    ],
-  }),
   component: SalonPage,
 });
 
